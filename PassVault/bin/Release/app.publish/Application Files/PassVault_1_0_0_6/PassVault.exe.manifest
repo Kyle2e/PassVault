@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="PassVault.exe" version="1.0.0.6" publicKeyToken="059935707a185bec" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PassVault" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="PassVault.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PassVault.exe" size="221184">
+      <assemblyIdentity name="PassVault" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>cM9UjfPFvIyW1AdG6EE9/vaPq4BFTwPrscCyf6sl56c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="PassVault.exe.config" size="1137">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>a0G0APKQEpsxGcHrzs/n1f769KoBQfW61KHF6z47tJE=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=pc1\User1" issuerKeyHash="6532bdbe0d763323ae904487e7cba8a3790e32d0" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Cb/+xDEV8vVE1mCH1k+r7hrSXfD3p+0HKG7AVs2L96I=</DigestValue></Reference></SignedInfo><SignatureValue>x/vKINgQmpoSSqoJDnh3lcnwut9b2+gMwzdKLiYk/Nz8C5XMOJXdKEaS7Kwpqt7bfXMwmBISXTHqNcFr3nMPiFoLm86WSfo3ELQjPs7vMCdnieS5UWT0bmRay8/33eexe3LW2iY87mPa+HsbG92lQ+mNnIUkwLp42ATzUFJD7qY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zg9dzzsRyRtI9LnAnrueBW53PFNfBJCJWSaJjHfVPaZHKMYFOqF9n7LcMTNXHTA4i3nnDg3x3mHbW8aHTG2u8l6vaRqB+LOAAAEt5oXLeYzFywabDgnRUAzZt7L4IMzsDWL8jrjH21k+eolx6Aub1LkqtMQ/su8Dhsb0jO6lhh0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a2f78bcd56c06e2807eda7f7f05dd21aeeab4fd68760d644f5f21531c4febf09" Description="" Url=""><as:assemblyIdentity name="PassVault.exe" version="1.0.0.6" publicKeyToken="059935707a185bec" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=pc1\User1</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+6UVKoCPbywHNtXHfq1cvZ5I9sp7ODVuuLszsTXnNgg=</DigestValue></Reference></SignedInfo><SignatureValue>KqelnxBOhh70HQ3IVNEnZKM0T8JK/XKMgaWvw/FydhtypDiwViYF7AuQgpFNL2JAf1XiZNThNkGTRTpQm5mn8IIvkMiK/ijrvLiASTkZTayiBEqMsIWdtDU7T1apVDQLMDI1VVhryplZD07n4022OHwFZsONoYoZBHreUvuzVYc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zg9dzzsRyRtI9LnAnrueBW53PFNfBJCJWSaJjHfVPaZHKMYFOqF9n7LcMTNXHTA4i3nnDg3x3mHbW8aHTG2u8l6vaRqB+LOAAAEt5oXLeYzFywabDgnRUAzZt7L4IMzsDWL8jrjH21k+eolx6Aub1LkqtMQ/su8Dhsb0jO6lhh0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBvTCCASagAwIBAgIQJ50Z4IHTyqNFPr7HePtKYDANBgkqhkiG9w0BAQsFADAdMRswGQYDVQQDHhIAcABjADEAXABVAHMAZQByADEwHhcNMTYwODAzMjM0NTM5WhcNMTcwODA0MDU0NTM5WjAdMRswGQYDVQQDHhIAcABjADEAXABVAHMAZQByADEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAM4PXc87EckbSPS5wJ67ngVudzxTXwSQiVkmiYx31T2mRyjGBTqhfZ+y3DEzVx0wOIt55w4N8d5h21vGh0xtrvJer2kagfizgAABLeaFy3mMxcsGmw4J0VAM2bey+CDM7A1i/I64x9tZPnqJcegLm9S5KrTEP7LvA4bG9IzupYYdAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAgfn3TQkWMgjrkzk+m1F4KQIXtfdI2xZvhP5nPbbSdxD3qablMXUMkJJQjEKjVYIJjNVL0ZSgOwpXwh+VXl1vXH816mGPWjRRYH72KLUHIF+9xn8yzwZpVq891nQemIMPA5b5ZJqUYsC3pL/TNliyFbivvbar4wi+3nm62ugZJuQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
